@@ -1,0 +1,11 @@
+version: '3'
+services:
+  devp-development-db:
+    container_name: devp-development-db
+    image: mysql/mysql-server
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/init:/docker-entrypoint-initdb.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=devLiquibaseRoot
