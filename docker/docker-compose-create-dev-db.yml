@@ -1,7 +1,8 @@
 version: '3'
+
 services:
-  devp-development-db:
-    container_name: devp-development-db
+  mysql-dev-db:
+    container_name: 'development-db'
     image: mysql/mysql-server
     ports:
       - "3306:3306"
