@@ -4,6 +4,12 @@ jobs:
   build:
     docker:
       - image: circleci/openjdk:8-jdk
+      - image: circleci/mysql:8.0
+          environment:
+            MYSQL_ROOT_PASSWORD: devLiquibaseRoot
+            MYSQL_DATABASE: devLiquibase
+            MYSQL_USER: devLiquibase
+            MYSQL_PASSWORD: devLiquibase
 
     working_directory: ~/spring-liquibase-example
 

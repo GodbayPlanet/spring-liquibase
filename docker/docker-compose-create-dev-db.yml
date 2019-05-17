@@ -3,7 +3,7 @@ version: '3'
 services:
   mysql-dev-db:
     container_name: 'development-db'
-    image: mysql/mysql-server
+    image: mysql/mysql-server:8.0
     ports:
       - "3306:3306"
     volumes:
