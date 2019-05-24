@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-test-users
+      logicalFilePath: add-test-users
+      author: nvasic
+      changes:
+        - insert:
+            tableName: user
+            columns:
+             - column:
+                name: first_name
+                value: "Petar"
+             - column:
+                name: last_name
+                value: "Petrovic"
+             - column:
+                name: email
+                value: "petar@gmail.com"
+             - column:
+                 name: password
+                 value: "petar_prvi143"
+             - column:
+                 name: authority
+                 value: "ADMIN"
+        - insert:
+            tableName: user
+            columns:
+              - column:
+                  name: first_name
+                  value: "Jovan"
+              - column:
+                  name: last_name
+                  value: "Jovandic"
+              - column:
+                  name: email
+                  value: "jovan@gmail.com"
+              - column:
+                  name: password
+                  value: "jovan_prvi143"
+              - column:
+                  name: authority
+                  value: "USER"
