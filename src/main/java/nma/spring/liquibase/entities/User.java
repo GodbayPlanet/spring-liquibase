@@ -7,9 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 @Entity
 public class User {
 
@@ -27,6 +29,7 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private Authority authority;
-}
 
-enum Authority {ADMIN, USER}
+    public enum Authority {ADMIN, USER}
+
+}

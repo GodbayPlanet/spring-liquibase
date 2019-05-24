@@ -1,7 +1,5 @@
 package nma.spring.liquibase.rest;
 
-import static org.springframework.http.HttpStatus.OK;
-
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
@@ -26,6 +24,6 @@ public class UserController {
     public ResponseEntity<List<User>> getUsers() {
         List<User> users = userService.getUsers();
         log.info("Retrieving list of users {}", users);
-        return ResponseEntity.status(OK).body(users);
+        return ResponseEntity.ok(users);
     }
 }
