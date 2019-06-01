@@ -9,3 +9,7 @@ spring:
 
   liquibase:
     contexts: migrate-db
+
+  jpa:
+    hibernate:
+      ddl-auto: none
