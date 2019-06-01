@@ -1,5 +1,0 @@
-databaseChangeLog:
-  - include:
-      file: classpath:db/changelog/changes/001-create-initial-schema.yml
-  - include:
-      file: classpath:db/changelog/changes/002-add-test-users.yml

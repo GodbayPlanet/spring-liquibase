@@ -5,5 +5,5 @@
 
     <include file="classpath:db/changelog/changes/001-create-initial-schema.xml"/>
     <include file="classpath:db/changelog/changes/002-add-test-users.xml"/>
-<!--    <include file="classpath:db/changelog/changes/003-add-users-through-sql-script.xml"/>-->
+    <include file="classpath:db/changelog/changes/003-add-book-table-and-insert-data.xml"/>
 </databaseChangeLog>

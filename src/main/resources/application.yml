@@ -11,6 +11,7 @@ spring:
     contexts: migrate-db
     change-log: classpath:db/changelog/db.changelog-master.xml
 
+  # Tell spring-boot to not create the database on its own
   jpa:
     hibernate:
       ddl-auto: none
